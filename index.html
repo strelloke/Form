@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form action="#" method="post">
+            <h1>Форма для заполнения</h1>
+            <section class="form-group_data">
+                <h2>Выберите Ваши данные: </h2>
+                <label for="text" class="form-label"> Введите любой текст:
+                    <input type="text" name="text" id="text" required placeholder="Hello, world!">
+                </label>
+                <label for="email" class="form-label"> Введите Ваш email:
+                    <input type="email" name="email" id="email" required placeholder="necto1234@gmail.com" >
+                </label>
+                <label for="password" class="form-label"> Введите Ваш пароль:
+                    <input type="password" name="password" id="password" required placeholder="necto1234">
+                </label>
+            </section>
+            <section class="form-group_radio">
+                <h2>Выберите ту професию которая относится к Вам:</h2>
+                <div>
+                    <input type="radio" name="radio" id="radio1" required>
+                    <label for="radio1"> Программист</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio2" required>
+                    <label for="radio2"> Дизайнер</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio3" required>
+                    <label for="radio3"> Визуальный художник</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio4" required>
+                    <label for="radio4"> Менеджер по продажам</label>
+                </div>
+                <div>
+                    <input type="radio" name="radio" id="radio5" required>
+                    <label for="radio5"> Нечего из этого</label>
+                </div>
+            </section>
+            <section class="form-group_checkbox">
+                <h2>Выберите те пункты, которые относятся к вам:</h2>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox1">
+                    <label for="checkbox1"> Вожу машину</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox2">
+                    <label for="checkbox2"> Люблю играть в футбол</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox3">
+                    <label for="checkbox3"> Люблю тусоватся</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox4">
+                    <label for="checkbox4"> Играю в компьютерные игры</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="checkbox" id="checkbox5">
+                    <label for="checkbox5"> Нечего из этого</label>
+                </div>
+            </section>
+            <input type="submit" value="Отправить" id="button" onclick="myFunction()">
+        </form>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
